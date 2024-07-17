@@ -1,0 +1,139 @@
+.totalnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Add padding for better spacing */
+  background-color: #020106a0;
+  color: #e1d7d7;
+}
+
+.menulist {
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Ensures the list style is none for the entire list */
+  display: flex; /* Use flexbox for horizontal layout */
+}
+
+.menulist li {
+  margin-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.menulist li:last-child {
+  margin-right: 15px; /* Remove margin from the last item */
+}
+
+.menulist li a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent element */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.menulist li a:hover {
+  color: #e1d7d7; /* Change color on hover */
+}
+
+.navbuttons {
+  display: flex;
+  align-items: center;
+}
+
+.inbtn,
+.outbtn {
+  padding: 8px 12px;
+  margin-right: 20px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none; /* Ensure no underline on links */
+}
+
+.inbtn:hover,
+.outbtn:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.navlogos {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin-left: auto; /* Push logos to the right */
+}
+
+.navlogos li {
+  margin-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.togglebtn {
+  display: none; /* Hide toggle button by default */
+}
+
+@media (max-width: 768px) {
+  .totalnav {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .navBarMenu {
+    display: none; /* Hide menu by default */
+    position: absolute;
+    top: 60px; /* Adjust top position as needed */
+    left: 20px; /* Adjust left position as needed */
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure it overlays other content */
+  }
+
+  .showNavBar {
+    display: block; /* Show menu when .showNavBar class is applied */
+  }
+
+  .togglebtn {
+    display: block; /* Show toggle button on smaller screens */
+    cursor: pointer;
+    margin-left: auto; /* Align to the right */
+    padding: 10px;
+  }
+
+  .menulist {
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Full width for better alignment */
+  }
+
+  .menulist li {
+    margin: 10px 0; /* Adjust margins for better spacing */
+  }
+
+  .navbuttons {
+    flex-direction: column; /* Stack buttons vertically */
+    width: 100%; /* Full width for better alignment */
+  }
+
+  .inbtn,
+  .outbtn {
+    width: 100%; /* Full width buttons */
+    margin: 10px 0; /* Adjust margins for better spacing */
+  }
+
+  .navlogos {
+    margin-top: 10px; /* Add some margin at the top */
+    width: 100%; /* Full width for better alignment */
+    justify-content: flex-start; /* Align logos to the start */
+  }
+
+  .navlogos li {
+    margin-right: 10px; /* Adjust margins for better spacing */
+  }
+}
+
+li {
+  color: aliceblue;
+}

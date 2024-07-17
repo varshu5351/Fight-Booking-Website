@@ -1,0 +1,141 @@
+/* Basic container styling */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .sectioncontainer {
+    background-color:  #020106a0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(211, 193, 193, 0.1);
+    width: 100%;
+    color: black;
+    max-width: 800px;
+  }
+  
+  .sectioncontainergrid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .buttonsflex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .singlebutton {
+    padding: 10px 20px;
+    background-color: #dfe2dedc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .singlebutton.active {
+    /* background-color: #007bff; */
+    color: #000000;
+  }
+  
+  .singlebutton:hover {
+    background-color: #2c80db;
+    color: #fff;
+  }
+  
+  .all {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sreachsinputflex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #4e4c4c;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .icondiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #030000;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #111010;
+  }
+  
+  .texts {
+    flex: 1;
+    max-width: 200px; /* Reduce the width */
+  }
+  
+  .texts h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #f7f3f3;
+  }
+  
+  .texts input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .srchbut {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #f7f2f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .srchbut:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 600px) {
+    .buttonsflex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .singlebutton {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .all {
+      gap: 10px;
+    }
+  
+    .sreachsinputflex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .texts {
+      width: 100%;
+      max-width: none; /* Allow full width on smaller screens */
+    }
+  
+    .texts input {
+      width: 100%;
+    }
+  }
+  
